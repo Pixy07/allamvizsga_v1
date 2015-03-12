@@ -1,0 +1,29 @@
+﻿Build started 3/11/2015 8:18:19 PM.
+     1>Project "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\Allamvizsga_v2.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\Cuda Programming\AppData\Local\Temp\tmpd8491b27ab724fb0995f34f6c35b56c8.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu" -clean
+         
+         C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile   -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu" -clean 
+         kernel.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\Cuda Programming\AppData\Local\Temp\tmpf0b64fe3152a43969772ab88a9ea8693.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu"
+         
+         C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu" 
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(189): warning : variable "col" was set but never used
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(252): warning : variable "last2" was declared but never referenced
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(501): warning : variable "index" was declared but never referenced
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(560): warning : variable "zero" was declared but never referenced
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(278): error : calling a __host__ function("cudaDeviceSynchronize") from a __global__ function("gpu_expand") is not allowed
+         kernel.cu
+     1>C:/Users/Cuda Programming/Desktop/alomvizsga/Allamvizsga_v2/Allamvizsga_v2/kernel.cu(280): error : calling a __host__ function("cudaDeviceSynchronize") from a __global__ function("gpu_expand") is not allowed
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\BuildCustomizations\CUDA 6.5.targets(593,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v6.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd  " -o Debug\kernel.cu.obj "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\kernel.cu"" exited with code 2.
+     1>Done Building Project "C:\Users\Cuda Programming\Desktop\alomvizsga\Allamvizsga_v2\Allamvizsga_v2\Allamvizsga_v2.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:07.47
